@@ -5,8 +5,7 @@ exports.up = function(knex, Promise) {
         table.text('email').notNullable();
         table.text('google_id').notNullable();
         table.boolean('banned').notNullable().default(false);
-
-    })
+    });
 };
 
 exports.down = function(knex, Promise) {
